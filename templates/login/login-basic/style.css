@@ -1,0 +1,59 @@
+/* =========================================
+   🔐 LOGIN BASIC - ESTILOS ESPECÍFICOS
+   Template de login centralizado
+   ========================================= */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-mono);
+}
+
+.login-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg);
+}
+
+.login-card {
+    animation: fadeIn 0.3s ease-in;
+}
+
+.login-form {
+    margin-top: var(--space-lg);
+}
+
+.login-footer {
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade Mobile */
+@media (max-width: 480px) {
+    .login-container {
+        padding: var(--space-md);
+    }
+    
+    .login-card {
+        padding: var(--space-lg);
+    }
+    
+    .card-title {
+        font-size: var(--font-size-lg);
+    }
+}

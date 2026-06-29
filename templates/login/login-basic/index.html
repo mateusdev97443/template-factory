@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login Template - Template Factory">
+    <title>Login | Template Factory</title>
+    
+    <!-- Core System -->
+    <link rel="stylesheet" href="../../../base/tokens.css">
+    <link rel="stylesheet" href="../../../base/reset.css">
+    <link rel="stylesheet" href="../../../base/components.css">
+    <link rel="stylesheet" href="../../../base/utilities.css">
+    
+    <!-- Template Specific -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    
+    <main class="login-container" role="main">
+        <div class="login-card card max-w-sm w-full">
+            
+            <header class="card-header">
+                <h1 class="card-title">🔒 Acesso Restrito</h1>
+                <p class="card-subtitle">Entre com suas credenciais</p>
+            </header>
+            
+            <form class="login-form" aria-label="Formulário de login" novalidate>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="seu@email.com"
+                        required
+                        aria-required="true"
+                        autocomplete="email"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Senha</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="form-input" 
+                        placeholder="••••••••"
+                        required
+                        aria-required="true"
+                        autocomplete="current-password"
+                    >
+                </div>
+                
+                <div class="form-group flex items-center justify-center gap-sm">
+                    <input type="checkbox" id="remember" name="remember" aria-label="Lembrar de mim">
+                    <label for="remember" class="text-sm text-muted">Lembrar de mim</label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-full">
+                    Entrar
+                </button>
+                
+                <div class="text-center mt-lg">
+                    <a href="#" class="text-sm text-accent">Esqueceu a senha?</a>
+                </div>
+                
+            </form>
+            
+            <footer class="login-footer text-center mt-lg">
+                <p class="text-sm text-muted">
+                    Não tem conta? <a href="#" class="text-accent">Cadastre-se</a>
+                </p>
+            </footer>
+            
+        </div>
+    </main>
+    
+</body>
+</html>

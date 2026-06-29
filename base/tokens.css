@@ -1,0 +1,69 @@
+/* =========================================
+   🎨 TOKENS.CSS - DESIGN TOKENS
+   Variáveis CSS para temas dark/light
+   ========================================= */
+
+:root {
+    /* 🌙 DARK MODE (Padrão) */
+    --color-bg-primary: #0a0a0a;
+    --color-bg-secondary: #141414;
+    --color-bg-tertiary: #1a1a1a;
+    
+    --color-text-primary: #d4d4d4;
+    --color-text-secondary: #888888;
+    --color-text-inverse: #0a0a0a;
+    
+    --color-accent: #00ff9d;
+    --color-accent-hover: #00cc7a;
+    --color-accent-dim: rgba(0, 255, 157, 0.1);
+    
+    --color-border: #333333;
+    --color-error: #ff4757;
+    --color-success: #2ed573;
+    
+    /* Tipografia */
+    --font-mono: 'Courier New', Courier, monospace;
+    --font-sans: system-ui, -apple-system, sans-serif;
+    
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    
+    /* Espaçamento */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    
+    /* Bordas */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* ☀️ LIGHT MODE (Override) */
+[data-theme="light"] {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f5f5f5;
+    --color-bg-tertiary: #e8e8e8;
+    
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #666666;
+    --color-text-inverse: #ffffff;
+    
+    --color-accent: #00cc7a;
+    --color-accent-hover: #009959;
+    --color-accent-dim: rgba(0, 204, 122, 0.1);
+    
+    --color-border: #dddddd;
+}
