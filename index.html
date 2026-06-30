@@ -1,222 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo de templates e componentes do Template Factory.">
-    <title>Template Factory - Catálogo de Templates</title>
-    
-    <!-- 🏗️ Core System Imports -->
-    <link rel="stylesheet" href="base/css/tokens.css">
-    <link rel="stylesheet" href="base/css/reset.css">
-    <link rel="stylesheet" href="base/css/components.css">
-    
-    <!-- 🎨 Vitrine Styles (Mobile First + Dark Mode) -->
-    <style>
-        body {
-            background-color: var(--color-bg-base);
-            color: var(--color-text-primary);
-            font-family: var(--font-sans);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: var(--space-4);
-        }
-
-        /* Header */
-        header {
-            border-bottom: 1px solid var(--color-border);
-            margin-bottom: var(--space-8);
-            padding-bottom: var(--space-6);
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: var(--fs-2xl);
-            color: var(--color-accent);
-            margin-bottom: var(--space-2);
-            letter-spacing: -0.02em;
-        }
-
-        header p {
-            color: var(--color-text-secondary);
-            font-size: var(--fs-base);
-        }
-
-        /* Main Sections */
-        main section {
-            margin-bottom: var(--space-12);
-        }
-
-        h2 {
-            font-size: var(--fs-xl);
-            color: var(--color-text-primary);
-            margin-bottom: var(--space-4);
-            border-left: 4px solid var(--color-accent);
-            padding-left: var(--space-3);
-        }
-
-        .about-text {
-            color: var(--color-text-secondary);
-            font-size: var(--fs-base);
-            max-width: 70ch;
-        }
-
-        /* Catalog Grid */
-        .catalog-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--space-6);
-            margin-top: var(--space-6);
-        }
-
-        @media (min-width: 768px) {
-            .catalog-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .catalog-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        /* Template Card */
-        .template-card {
-            background-color: var(--color-bg-surface);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .template-card:hover {
-            border-color: var(--color-accent);
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-        }
-
-        .template-card h3 {
-            font-size: var(--fs-lg);
-            color: var(--color-text-primary);
-            margin-bottom: var(--space-2);
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-        }
-
-        .template-card p {
-            color: var(--color-text-secondary);
-            font-size: var(--fs-sm);
-            margin-bottom: var(--space-6);
-            flex-grow: 1;
-        }
-
-        .badge {
-            display: inline-block;
-            background-color: var(--color-bg-elevated);
-            color: var(--color-accent);
-            font-size: var(--fs-xs);
-            padding: var(--space-1) var(--space-2);
-            border-radius: var(--radius-sm);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: var(--space-3);
-        }
-
-        .btn-view {
-            display: block;
-            text-align: center;
-            background-color: var(--color-accent);
-            color: var(--color-text-inverse);
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            font-weight: 600;
-            text-decoration: none;
-            transition: background-color 0.2s ease;
-        }
-
-        .btn-view:hover {
-            background-color: var(--color-accent-hover);
-        }
-
-        /* Footer */
-        footer {
-            margin-top: var(--space-12);
-            padding-top: var(--space-6);
-            border-top: 1px solid var(--color-border);
-            text-align: center;
-            color: var(--color-text-secondary);
-            font-size: var(--fs-sm);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de templates Front-End responsivos, acessíveis e mobile-first.">
+  <title>Template Factory | Catálogo</title>
+  
+  <!-- Core System -->
+  <link rel="stylesheet" href="base/css/tokens.css">
+  <link rel="stylesheet" href="base/css/reset.css">
+  <link rel="stylesheet" href="base/css/components.css">
+  <link rel="stylesheet" href="base/css/utilities.css">
+  <link rel="stylesheet" href="base/css/catalog.css">
 </head>
-<body>
+<body class="bg-primary text-primary">
 
-    <div class="container">
-        
-        <header>
-            <h1>🏗️ Template Factory</h1>
-            <p>Catálogo de Interfaces, Padrões e Componentes</p>
-        </header>
+  <header class="container py-xl text-center">
+    <h1 class="text-3xl font-bold mb-sm">Template Factory</h1>
+    <p class="text-muted">Catálogo de componentes e templates do Core System.</p>
+  </header>
 
-        <main>
-            <section id="about">
-                <h2>Sobre o Projeto</h2>
-                <p class="about-text">
-                    A <strong>Template Factory</strong> é um repositório centralizado de skeletons e padrões de código front-end. 
-                    O objetivo é fornecer estruturas prontas, semânticas e acessíveis para acelerar o início de novos projetos, 
-                    garantindo consistência visual e técnica através de um Design System próprio (Core System).
-                </p>
-            </section>
+  <main class="container catalog">
+    <section aria-label="Vitrine de Templates">
+      <div class="catalog-grid">
 
-            <section id="catalog">
-                <h2>Templates Disponíveis</h2>
-                
-                <div class="catalog-grid">
-                    
-                    <!-- TEMPLATE 01: LOGIN BASIC -->
-                    <article class="template-card">
-                        <span class="badge">HTML5 + CSS3</span>
-                        <h3>🔐 Login Basic</h3>
-                        <p>
-                            Tela de autenticação centralizada com design minimalista. 
-                            Implementa Dark Mode nativo, validação de formulário e responsividade mobile-first 
-                            utilizando o Core System de tokens.
-                        </p>
-                        <a href="templates/login/login-basic/index.html" class="btn-view">
-                            Visualizar Template
-                        </a>
-                    </article>
+        <!-- 1. Login Basic -->
+        <article class="card">
+          <div class="catalog__preview">[ PREVIEW: LOGIN BASIC ]</div>
+          <div class="card__body">
+            <h2 class="card__title">Login Basic</h2>
+            <p class="card__text">Tela de login centralizada, minimalista, dark mode nativo e focada em mobile.</p>
+            <div class="flex gap-sm mt-md flex-wrap">
+              <span class="badge badge--primary">HTML5</span>
+              <span class="badge badge--secondary">CSS3</span>
+              <span class="badge badge--success">A11y</span>
+            </div>
+            <div class="flex gap-sm mt-lg">
+              <a href="templates/login/login-basic/index.html" class="btn btn--primary flex-1">Ver Demo</a>
+              <a href="#" class="btn btn--ghost flex-1">Código</a>
+            </div>
+          </div>
+        </article>
 
-                    <!-- PLACEHOLDER PARA FUTUROS TEMPLATES -->
-                    <!--
-                    <article class="template-card">
-                        <span class="badge">Em Breve</span>
-                        <h3>📊 Dashboard Admin</h3>
-                        <p>Layout de painel administrativo com sidebar e grid de dados.</p>
-                        <button class="btn-view" disabled>Indisponível</button>
-                    </article>
-                    -->
+        <!-- 2. Login Side Image -->
+        <article class="card">
+          <div class="catalog__preview">[ PREVIEW: SIDE IMAGE ]</div>
+          <div class="card__body">
+            <h2 class="card__title">Login Side Image</h2>
+            <p class="card__text">Layout split-screen (50/50 no desktop). Foco em conversão com apelo visual lateral.</p>
+            <div class="flex gap-sm mt-md flex-wrap">
+              <span class="badge badge--primary">HTML5</span>
+              <span class="badge badge--info">Flex/Grid</span>
+              <span class="badge badge--success">BEM</span>
+            </div>
+            <div class="flex gap-sm mt-lg">
+              <a href="templates/login/login-side-image/index.html" class="btn btn--primary flex-1">Ver Demo</a>
+              <a href="#" class="btn btn--ghost flex-1">Código</a>
+            </div>
+          </div>
+        </article>
 
-                </div>
-            </section>
-        </main>
+        <!-- 3. Register -->
+        <article class="card">
+          <div class="catalog__preview">[ PREVIEW: REGISTER ]</div>
+          <div class="card__body">
+            <h2 class="card__title">Register</h2>
+            <p class="card__text">Formulário de cadastro robusto com validação visual, estados de erro e feedback claro.</p>
+            <div class="flex gap-sm mt-md flex-wrap">
+              <span class="badge badge--primary">HTML5</span>
+              <span class="badge badge--warning">JS</span>
+              <span class="badge badge--danger">Form</span>
+            </div>
+            <div class="flex gap-sm mt-lg">
+              <a href="templates/login/register/index.html" class="btn btn--primary flex-1">Ver Demo</a>
+              <a href="#" class="btn btn--ghost flex-1">Código</a>
+            </div>
+          </div>
+        </article>
 
-        <footer>
-            <p>🔒 Bunker Architect System &copy; 2026 | Mantido por Mateus Ernandes</p>
-        </footer>
+        <!-- 4. Error 404 -->
+        <article class="card">
+          <div class="catalog__preview">[ PREVIEW: ERROR 404 ]</div>
+          <div class="card__body">
+            <h2 class="card__title">Página 404</h2>
+            <p class="card__text">Página de erro criativa com ilustração SVG inline, tipografia expressiva e micro-animações.</p>
+            <div class="flex gap-sm mt-md flex-wrap">
+              <span class="badge badge--primary">HTML5</span>
+              <span class="badge badge--info">SVG</span>
+              <span class="badge badge--secondary">CSS Anim</span>
+            </div>
+            <div class="flex gap-sm mt-lg">
+              <a href="templates/404/index.html" class="btn btn--primary flex-1">Ver Demo</a>
+              <a href="#" class="btn btn--ghost flex-1">Código</a>
+            </div>
+          </div>
+        </article>
 
-    </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container py-xl text-center text-muted mt-xl border-top">
+    <p>&copy; 2026 Template Factory. Core System by <strong>Bunker Architect</strong>.</p>
+  </footer>
 
 </body>
 </html>
