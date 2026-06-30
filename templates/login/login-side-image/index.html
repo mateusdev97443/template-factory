@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login com imagem lateral - Template Factory">
+    <title>Login | Template Factory</title>
+    
+    <!-- Core System -->
+    <link rel="stylesheet" href="../../../base/css/tokens.css">
+    <link rel="stylesheet" href="../../../base/css/reset.css">
+    <link rel="stylesheet" href="../../../base/css/components.css">
+    
+    <!-- Template Specific -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-side-body">
+
+    <main class="login-side-container" role="main">
+        
+        <!-- Side Image Section -->
+        <section class="login-side-image" aria-hidden="true">
+            <div class="login-side-image__overlay"></div>
+            <div class="login-side-image__content">
+                <h1 class="login-side-image__title">Template Factory</h1>
+                <p class="login-side-image__subtitle">Construindo interfaces modernas</p>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="login-side-form" aria-labelledby="login-title">
+            <div class="login-side-form__wrapper">
+                
+                <header class="login-side-form__header">
+                    <h2 id="login-title" class="login-side-form__title">Bem-vindo de volta</h2>
+                    <p class="login-side-form__subtitle">Entre com suas credenciais para continuar</p>
+                </header>
+
+                <form class="login-side-form__form" id="loginForm" novalidate>
+                    
+                    <div class="form-group">
+                        <label for="email" class="label">E-mail</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="input" 
+                            placeholder="seu@email.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="label">Senha</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            class="input" 
+                            placeholder="••••••••"
+                            autocomplete="current-password"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group form-group--checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember" class="checkbox-input">
+                            <span class="checkbox-text">Lembrar de mim</span>
+                        </label>
+                        <a href="#" class="login-side-form__link">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary login-side-form__button">
+                        Entrar
+                    </button>
+
+                </form>
+
+                <footer class="login-side-form__footer">
+                    <p class="login-side-form__text">
+                        Não tem conta? <a href="#" class="login-side-form__link">Cadastre-se</a>
+                    </p>
+                </footer>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* =========================================
+   📝 REGISTER - FORMULÁRIO DE CADASTRO
+   ========================================= */
+
+.register-body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+}
+
+.register-container {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.register-title {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.register-subtitle {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5, 1.25rem);
+}
+
+.form-group--terms {
+  margin-top: var(--space-2);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  cursor: pointer;
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.checkbox-input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.checkbox-text {
+  user-select: none;
+}
+
+.register-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.register-link:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.register-button {
+  width: 100%;
+  margin-top: var(--space-4);
+}
+
+.register-footer {
+  margin-top: var(--space-8);
+  text-align: center;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.register-footer__text {
+  font-size: var(--fs-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Validation States */
+.input--valid {
+  border-color: var(--color-accent);
+}
+
+.input--valid:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.form-helper--success {
+  color: var(--color-accent);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  .register-card {
+    padding: var(--space-6);
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .register-title {
+    font-size: var(--fs-xl);
+  }
+}
