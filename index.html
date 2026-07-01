@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Template Factory | Catálogo</title>
+  <title>Template Factory | Core System</title>
+  <meta name="description" content="Catálogo de templates profissionais construídos com precisão.">
+  
+  <!-- Core System CSS -->
   <link rel="stylesheet" href="base/css/tokens.css">
   <link rel="stylesheet" href="base/css/reset.css">
   <link rel="stylesheet" href="base/css/utilities.css">
@@ -12,161 +15,80 @@
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <h1 class="text-3xl font-bold">Template Factory</h1>
-    <p class="text-muted">Catálogo de componentes e templates do Core System.</p>
-  </div>
-</header>
+  <header class="catalog__header">
+    <div class="catalog__container">
+      <h1 class="catalog__title-main">Template Factory</h1>
+      <p class="catalog__subtitle">Catálogo de componentes e templates do Core System.</p>
+    </div>
+  </header>
 
-<main>
-<section class="catalog" id="catalog">
-  <div class="catalog__header">
-    <h2 class="catalog__title">Template Factory</h2>
-    <p class="catalog__subtitle">
-      Templates profissionais construídos com precisão. 
-      Cada um projetado para resolver um problema específico com excelência.
-    </p>
-  </div>
-
-  <div class="catalog-grid">
-
-    <!-- Login Basic -->
-    <article class="template-card">
-      <div class="template-card__preview">
-        <div class="preview-mock preview-mock--login-basic">
-          <div class="preview-mock__browser-bar"></div>
-          <div class="preview-mock__content">
-            <div class="preview-mock__logo"></div>
-            <div class="preview-mock__form">
-              <div class="preview-mock__input-group">
-                <div class="preview-mock__label"></div>
-                <div class="preview-mock__input"></div>
-              </div>
-              <div class="preview-mock__input-group">
-                <div class="preview-mock__label"></div>
-                <div class="preview-mock__input"></div>
-              </div>
-              <div class="preview-mock__button"></div>
-            </div>
+  <main class="catalog">
+    <div class="catalog__container">
+      <p class="catalog__intro">Templates profissionais construídos com precisão. Cada um projetado para resolver um problema específico com excelência.</p>
+      
+      <div class="catalog__grid">
+        
+        <!-- Card 1: Login Basic -->
+        <article class="catalog__item">
+          <div class="catalog__preview">
+            <span>[ PREVIEW: LOGIN BASIC ]</span>
           </div>
-        </div>
-      </div>
-      <div class="template-card__content">
-        <h3 class="template-card__title">Login Basic</h3>
-        <p class="template-card__description">
-          O template essencial para autenticação rápida e sem distrações. 
-          Ideal para dashboards internos, ferramentas administrativas, MVPs e aplicações que precisam de login funcional em segundos.
-        </p>
-        <div class="template-card__actions">
-          <button class="btn btn--primary">Ver Demo</button>
-          <button class="btn btn--secondary">Código</button>
-        </div>
-      </div>
-    </article>
-
-    <!-- Login Side Image -->
-    <article class="template-card">
-      <div class="template-card__preview">
-        <div class="preview-mock preview-mock--login-side">
-          <div class="preview-mock__side-image"></div>
-          <div class="preview-mock__form">
-            <div class="preview-mock__input-group">
-              <div class="preview-mock__label"></div>
-              <div class="preview-mock__input"></div>
-            </div>
-            <div class="preview-mock__input-group">
-              <div class="preview-mock__label"></div>
-              <div class="preview-mock__input"></div>
-            </div>
-            <div class="preview-mock__button"></div>
+          <h2 class="catalog__item-title">Login Basic</h2>
+          <p class="catalog__item-desc">O template essencial para autenticação rápida e sem distrações. Ideal para dashboards internos, ferramentas administrativas, MVPs e aplicações que precisam de login funcional em segundos.</p>
+          <div class="catalog__actions">
+            <a href="templates/login-basic/" class="btn btn--primary">Ver Demo</a>
+            <a href="https://github.com/mateusdev97443/template-factory/tree/main/templates/login-basic" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
-        </div>
-      </div>
-      <div class="template-card__content">
-        <h3 class="template-card__title">Login Side Image</h3>
-        <p class="template-card__description">
-          Combina impacto visual com usabilidade impecável. 
-          Perfeito para produtos digitais, SaaS consumer-facing, landing pages de alta conversão e projetos que precisam transmitir sofisticação desde a primeira tela.
-        </p>
-        <div class="template-card__actions">
-          <button class="btn btn--primary">Ver Demo</button>
-          <button class="btn btn--secondary">Código</button>
-        </div>
-      </div>
-    </article>
+        </article>
 
-    <!-- Register -->
-    <article class="template-card">
-      <div class="template-card__preview">
-        <div class="preview-mock preview-mock--register">
-          <div class="preview-mock__browser-bar"></div>
-          <div class="preview-mock__content">
-            <div class="preview-mock__logo"></div>
-            <div class="preview-mock__form">
-              <div class="preview-mock__input-group">
-                <div class="preview-mock__label"></div>
-                <div class="preview-mock__input"></div>
-              </div>
-              <div class="preview-mock__input-group">
-                <div class="preview-mock__label"></div>
-                <div class="preview-mock__input"></div>
-              </div>
-              <div class="preview-mock__input-group">
-                <div class="preview-mock__label"></div>
-                <div class="preview-mock__input"></div>
-              </div>
-              <div class="preview-mock__button"></div>
-            </div>
+        <!-- Card 2: Login Side Image -->
+        <article class="catalog__item">
+          <div class="catalog__preview">
+            <span>[ PREVIEW: LOGIN SIDE IMAGE ]</span>
           </div>
-        </div>
-      </div>
-      <div class="template-card__content">
-        <h3 class="template-card__title">Register</h3>
-        <p class="template-card__description">
-          Onboarding limpo, guiado e com alta taxa de conversão. 
-          Projetado para plataformas, comunidades e serviços que precisam de um processo de registro eficiente, claro e profissional.
-        </p>
-        <div class="template-card__actions">
-          <button class="btn btn--primary">Ver Demo</button>
-          <button class="btn btn--secondary">Código</button>
-        </div>
-      </div>
-    </article>
-
-    <!-- Página 404 -->
-    <article class="template-card">
-      <div class="template-card__preview">
-        <div class="preview-mock preview-mock--404">
-          <div class="preview-mock__error">
-            <span class="preview-mock__error-number">404</span>
-            <div class="preview-mock__error-text"></div>
+          <h2 class="catalog__item-title">Login Side Image</h2>
+          <p class="catalog__item-desc">Combina impacto visual com usabilidade impecável. Perfeito para produtos digitais, SaaS consumer-facing, landing pages de alta conversão e projetos que precisam transmitir sofisticação desde a primeira tela.</p>
+          <div class="catalog__actions">
+            <a href="templates/login-side-image/" class="btn btn--primary">Ver Demo</a>
+            <a href="https://github.com/mateusdev97443/template-factory/tree/main/templates/login-side-image" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Código</a>
           </div>
-          <div class="preview-mock__home-button"></div>
-        </div>
-      </div>
-      <div class="template-card__content">
-        <h3 class="template-card__title">Página 404</h3>
-        <p class="template-card__description">
-          Erro transformado em experiência positiva. 
-          Essencial para qualquer site ou aplicação que valoriza manter o usuário engajado e com navegação clara, mesmo em páginas não encontradas.
-        </p>
-        <div class="template-card__actions">
-          <button class="btn btn--primary">Ver Demo</button>
-          <button class="btn btn--secondary">Código</button>
-        </div>
-      </div>
-    </article>
+        </article>
 
-  </div>
-</section>
-</main>
+        <!-- Card 3: Register -->
+        <article class="catalog__item">
+          <div class="catalog__preview">
+            <span>[ PREVIEW: REGISTER ]</span>
+          </div>
+          <h2 class="catalog__item-title">Register</h2>
+          <p class="catalog__item-desc">Onboarding limpo, guiado e com alta taxa de conversão. Projetado para plataformas, comunidades e serviços que precisam de um processo de registro eficiente, claro e profissional.</p>
+          <div class="catalog__actions">
+            <a href="templates/register/" class="btn btn--primary">Ver Demo</a>
+            <a href="https://github.com/mateusdev97443/template-factory/tree/main/templates/register" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
 
-<footer>
-  <div class="container">
-    <p>© 2026 Template Factory. Core System by Bunker Architect.</p>
-  </div>
-</footer>
+        <!-- Card 4: 404 -->
+        <article class="catalog__item">
+          <div class="catalog__preview">
+            <span>[ PREVIEW: 404 PAGE ]</span>
+          </div>
+          <h2 class="catalog__item-title">Página 404</h2>
+          <p class="catalog__item-desc">Erro transformado em experiência positiva. Essencial para qualquer site ou aplicação que valoriza manter o usuário engajado e com navegação clara, mesmo em páginas não encontradas.</p>
+          <div class="catalog__actions">
+            <a href="templates/404/" class="btn btn--primary">Ver Demo</a>
+            <a href="https://github.com/mateusdev97443/template-factory/tree/main/templates/404" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">Código</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="catalog__footer">
+    <div class="catalog__container">
+      <p>&copy; 2026 Template Factory. Core System by Bunker Architect.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
