@@ -3,154 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Catálogo de templates Front-End responsivos, acessíveis e mobile-first.">
   <title>Template Factory | Catálogo</title>
-  
-  <!-- Core System -->
   <link rel="stylesheet" href="base/css/tokens.css">
   <link rel="stylesheet" href="base/css/reset.css">
-  <link rel="stylesheet" href="base/css/components.css">
   <link rel="stylesheet" href="base/css/utilities.css">
-  <link rel="stylesheet" href="base/css/catalog.css">
+  <link rel="stylesheet" href="catalog.css">
 </head>
-<body class="bg-primary text-primary">
+<body>
 
-  <header class="container py-xl text-center">
-    <h1 class="text-3xl font-bold mb-sm">Template Factory</h1>
+<header>
+  <div class="container">
+    <h1 class="text-3xl font-bold">Template Factory</h1>
     <p class="text-muted">Catálogo de componentes e templates do Core System.</p>
-  </header>
+  </div>
+</header>
 
-  <main class="container catalog">
-    <section aria-label="Vitrine de Templates">
-      <div class="catalog-grid">
-  <article class="card">
-    <div class="card__preview preview-contact-form">
-      <div class="preview-contact-form__field"></div>
-      <div class="preview-contact-form__field preview-contact-form__field--short"></div>
-      <div class="preview-contact-form__button"></div>
-    </div>
-    <h3 class="card__title">Login Basic</h3>
-    <p class="card__description">Tela de login limpa e direta, formulário centralizado.</p>
-  </article>
-  <article class="card">
-    <div class="card__preview preview-hero-banner">
-      <div class="preview-hero-banner__image"></div>
-      <div class="preview-hero-banner__content">
-        <div class="preview-hero-banner__title"></div>
-        <div class="preview-hero-banner__text"></div>
-        <div class="preview-hero-banner__cta"></div>
-      </div>
-    </div>
-    <h3 class="card__title">Login Side Image</h3>
-    <p class="card__description">Login com imagem lateral e formulário ao lado.</p>
-  </article>
-  <article class="card">
-    <div class="card__preview preview-pricing-table">
-      <div class="preview-pricing-table__plan">
-        <div class="preview-pricing-table__header"></div>
-        <div class="preview-pricing-table__price"></div>
-        <div class="preview-pricing-table__feature"></div>
-      </div>
-      <div class="preview-pricing-table__plan preview-pricing-table__plan--popular">
-        <div class="preview-pricing-table__header"></div>
-        <div class="preview-pricing-table__price"></div>
-        <div class="preview-pricing-table__feature"></div>
-      </div>
-      <div class="preview-pricing-table__plan">
-        <div class="preview-pricing-table__header"></div>
-        <div class="preview-pricing-table__price"></div>
-        <div class="preview-pricing-table__feature"></div>
-      </div>
-    </div>
-    <h3 class="card__title">Register</h3>
-    <p class="card__description">Formulário de cadastro com validação client‑side.</p>
-  </article>
-  <article class="card">
-    <div class="card__preview preview-feature-grid">
-      <div class="preview-feature-grid__item">
-        <span class="preview-feature-grid__icon">🔍</span>
-        <div class="preview-feature-grid__line"></div>
-      </div>
-      <div class="preview-feature-grid__item">
-        <span class="preview-feature-grid__icon">📁</span>
-        <div class="preview-feature-grid__line"></div>
-      </div>
-      <div class="preview-feature-grid__item">
-        <span class="preview-feature-grid__icon">⚙️</span>
-        <div class="preview-feature-grid__line"></div>
-      </div>
-      <div class="preview-feature-grid__item">
-        <span class="preview-feature-grid__icon">💬</span>
-        <div class="preview-feature-grid__line"></div>
-      </div>
-    </div>
-    <h3 class="card__title">404</h3>
-    <p class="card__description">Página de erro personalizada com retorno amigável.</p>
-  </article>
-</div>
-</article>
+<main>
+<section class="catalog" id="catalog">
+  <div class="catalog__header">
+    <h2 class="catalog__title">Template Factory</h2>
+    <p class="catalog__subtitle">
+      Templates profissionais construídos com precisão. 
+      Cada um projetado para resolver um problema específico com excelência.
+    </p>
+  </div>
 
-        <!-- 2. Login Side Image -->
-        <article class="card">
-          <div class="catalog__preview">[ PREVIEW: SIDE IMAGE ]</div>
-          <div class="card__body">
-            <h2 class="card__title">Login Side Image</h2>
-            <p class="card__text">Layout split-screen (50/50 no desktop). Foco em conversão com apelo visual lateral.</p>
-            <div class="flex gap-sm mt-md flex-wrap">
-              <span class="badge badge--primary">HTML5</span>
-              <span class="badge badge--info">Flex/Grid</span>
-              <span class="badge badge--success">BEM</span>
-            </div>
-            <div class="flex gap-sm mt-lg">
-              <a href="templates/login/login-side-image/index.html" class="btn btn--primary flex-1">Ver Demo</a>
-              <a href="#" class="btn btn--ghost flex-1">Código</a>
+  <div class="catalog-grid">
+
+    <!-- Login Basic -->
+    <article class="template-card">
+      <div class="template-card__preview">
+        <div class="preview-mock preview-mock--login-basic">
+          <div class="preview-mock__browser-bar"></div>
+          <div class="preview-mock__content">
+            <div class="preview-mock__logo"></div>
+            <div class="preview-mock__form">
+              <div class="preview-mock__input-group">
+                <div class="preview-mock__label"></div>
+                <div class="preview-mock__input"></div>
+              </div>
+              <div class="preview-mock__input-group">
+                <div class="preview-mock__label"></div>
+                <div class="preview-mock__input"></div>
+              </div>
+              <div class="preview-mock__button"></div>
             </div>
           </div>
-        </article>
-
-        <!-- 3. Register -->
-        <article class="card">
-          <div class="catalog__preview">[ PREVIEW: REGISTER ]</div>
-          <div class="card__body">
-            <h2 class="card__title">Register</h2>
-            <p class="card__text">Formulário de cadastro robusto com validação visual, estados de erro e feedback claro.</p>
-            <div class="flex gap-sm mt-md flex-wrap">
-              <span class="badge badge--primary">HTML5</span>
-              <span class="badge badge--warning">JS</span>
-              <span class="badge badge--danger">Form</span>
-            </div>
-            <div class="flex gap-sm mt-lg">
-              <a href="templates/login/register/index.html" class="btn btn--primary flex-1">Ver Demo</a>
-              <a href="#" class="btn btn--ghost flex-1">Código</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 4. Error 404 -->
-        <article class="card">
-          <div class="catalog__preview">[ PREVIEW: ERROR 404 ]</div>
-          <div class="card__body">
-            <h2 class="card__title">Página 404</h2>
-            <p class="card__text">Página de erro criativa com ilustração SVG inline, tipografia expressiva e micro-animações.</p>
-            <div class="flex gap-sm mt-md flex-wrap">
-              <span class="badge badge--primary">HTML5</span>
-              <span class="badge badge--info">SVG</span>
-              <span class="badge badge--secondary">CSS Anim</span>
-            </div>
-            <div class="flex gap-sm mt-lg">
-              <a href="templates/404/index.html" class="btn btn--primary flex-1">Ver Demo</a>
-              <a href="#" class="btn btn--ghost flex-1">Código</a>
-            </div>
-          </div>
-        </article>
-
+        </div>
       </div>
-    </section>
-  </main>
+      <div class="template-card__content">
+        <h3 class="template-card__title">Login Basic</h3>
+        <p class="template-card__description">
+          O template essencial para autenticação rápida e sem distrações. 
+          Ideal para dashboards internos, ferramentas administrativas, MVPs e aplicações que precisam de login funcional em segundos.
+        </p>
+        <div class="template-card__actions">
+          <button class="btn btn--primary">Ver Demo</button>
+          <button class="btn btn--secondary">Código</button>
+        </div>
+      </div>
+    </article>
 
-  <footer class="container py-xl text-center text-muted mt-xl border-top">
-    <p>&copy; 2026 Template Factory. Core System by <strong>Bunker Architect</strong>.</p>
-  </footer>
+    <!-- Login Side Image -->
+    <article class="template-card">
+      <div class="template-card__preview">
+        <div class="preview-mock preview-mock--login-side">
+          <div class="preview-mock__side-image"></div>
+          <div class="preview-mock__form">
+            <div class="preview-mock__input-group">
+              <div class="preview-mock__label"></div>
+              <div class="preview-mock__input"></div>
+            </div>
+            <div class="preview-mock__input-group">
+              <div class="preview-mock__label"></div>
+              <div class="preview-mock__input"></div>
+            </div>
+            <div class="preview-mock__button"></div>
+          </div>
+        </div>
+      </div>
+      <div class="template-card__content">
+        <h3 class="template-card__title">Login Side Image</h3>
+        <p class="template-card__description">
+          Combina impacto visual com usabilidade impecável. 
+          Perfeito para produtos digitais, SaaS consumer-facing, landing pages de alta conversão e projetos que precisam transmitir sofisticação desde a primeira tela.
+        </p>
+        <div class="template-card__actions">
+          <button class="btn btn--primary">Ver Demo</button>
+          <button class="btn btn--secondary">Código</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Register -->
+    <article class="template-card">
+      <div class="template-card__preview">
+        <div class="preview-mock preview-mock--register">
+          <div class="preview-mock__browser-bar"></div>
+          <div class="preview-mock__content">
+            <div class="preview-mock__logo"></div>
+            <div class="preview-mock__form">
+              <div class="preview-mock__input-group">
+                <div class="preview-mock__label"></div>
+                <div class="preview-mock__input"></div>
+              </div>
+              <div class="preview-mock__input-group">
+                <div class="preview-mock__label"></div>
+                <div class="preview-mock__input"></div>
+              </div>
+              <div class="preview-mock__input-group">
+                <div class="preview-mock__label"></div>
+                <div class="preview-mock__input"></div>
+              </div>
+              <div class="preview-mock__button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="template-card__content">
+        <h3 class="template-card__title">Register</h3>
+        <p class="template-card__description">
+          Onboarding limpo, guiado e com alta taxa de conversão. 
+          Projetado para plataformas, comunidades e serviços que precisam de um processo de registro eficiente, claro e profissional.
+        </p>
+        <div class="template-card__actions">
+          <button class="btn btn--primary">Ver Demo</button>
+          <button class="btn btn--secondary">Código</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Página 404 -->
+    <article class="template-card">
+      <div class="template-card__preview">
+        <div class="preview-mock preview-mock--404">
+          <div class="preview-mock__error">
+            <span class="preview-mock__error-number">404</span>
+            <div class="preview-mock__error-text"></div>
+          </div>
+          <div class="preview-mock__home-button"></div>
+        </div>
+      </div>
+      <div class="template-card__content">
+        <h3 class="template-card__title">Página 404</h3>
+        <p class="template-card__description">
+          Erro transformado em experiência positiva. 
+          Essencial para qualquer site ou aplicação que valoriza manter o usuário engajado e com navegação clara, mesmo em páginas não encontradas.
+        </p>
+        <div class="template-card__actions">
+          <button class="btn btn--primary">Ver Demo</button>
+          <button class="btn btn--secondary">Código</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Template Factory. Core System by Bunker Architect.</p>
+  </div>
+</footer>
 
 </body>
 </html>
