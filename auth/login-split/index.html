@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | Arsenal</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="theme-corporate">
+
+<main class="split-container">
+
+<section class="visual-panel" aria-label="Painel visual de destaque">
+<div class="visual-overlay">
+<h1 class="brand-text">Bem-vindo de volta.</h1>
+<p class="brand-sub">Acesse seu painel de controle.</p>
+</div>
+</section>
+
+<section class="form-panel">
+
+<div class="form-wrapper">
+
+<header class="form-header">
+<h2>Entrar na sua conta</h2>
+<p>Insira suas credenciais para continuar.</p>
+</header>
+
+<form id="loginForm" novalidate>
+
+<div class="input-group">
+<label for="email">E-mail</label>
+<input
+type="email"
+id="email"
+name="email"
+placeholder="seu@email.com"
+required
+aria-required="true">
+</div>
+
+<div class="input-group">
+<label for="password">Senha</label>
+<input
+type="password"
+id="password"
+name="password"
+placeholder="••••••••"
+required
+aria-required="true">
+</div>
+
+<div class="form-options">
+
+<label class="checkbox-wrapper">
+<input type="checkbox" name="remember">
+<span>Lembrar de mim</span>
+</label>
+
+<a href="#" class="forgot-link">
+Esqueceu a senha?
+</a>
+
+</div>
+
+<button type="submit" class="btn-primary">
+Acessar Painel
+</button>
+
+</form>
+
+<footer class="form-footer">
+<p>
+Não tem uma conta?
+<a href="#">Cadastre-se</a>
+</p>
+</footer>
+
+</div>
+
+</section>
+
+</main>
+
+<div class="theme-switcher" aria-label="Alternador de temas">
+
+<button data-theme="corporate">
+Corporate
+</button>
+
+<button data-theme="startup">
+Startup
+</button>
+
+<button data-theme="minimal">
+Minimal
+</button>
+
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
